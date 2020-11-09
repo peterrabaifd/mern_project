@@ -29,7 +29,12 @@ export default function Login({ history }){
                 }, 2000)
             }
         } catch (error) {
-            
+            setError(true)
+            setErrorMessage("Error, the server returned an error")
+            setTimeout(()=>{
+                setError(false)
+                setErrorMessage("")
+            }, 2000)
         }
 
         
