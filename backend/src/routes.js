@@ -33,6 +33,7 @@ routes.post('/login', LoginController.store)
 routes.get('/dashboard/:sport', DashboardController.getAllEvents)
 routes.get('/dashboard', DashboardController.getAllEvents)
 routes.get('/event/:eventId', DashboardController.getEventById)
+routes.get('/user/events', DashboardController.getEventsByUserId)
 
 
 //Event
